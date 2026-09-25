@@ -188,3 +188,12 @@ Trust derives ONLY from the signature. Every manifest field must match the
 
 verified signed block, or the entry is rejected.
 
+## Notes
+- maxImageSize = size of the inactive OTA app partition, read at runtime
+  (1,310,720 bytes with the pinned default.csv).
+- Rollback is done by the ESP-IDF bootloader: an image that reboots before
+  confirming is marked aborted and the previous image boots.
+- BEGIN is refused with BAD_STATE while bootState == 1. While the running
+  image is unconfirmed, the other slot holds the only rollback target.
+- bootState 2 persists until a later update overwrites the invalid slot.
+  After ACTIVATE, the outcome is judged by version + bootState together.
