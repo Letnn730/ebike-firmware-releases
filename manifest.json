@@ -1,0 +1,15 @@
+{
+  "manifestFormat": 1,
+  "releases": [
+    {
+      "hwRev": 3,
+      "version": "0.6.2",
+      "url": "https://github.com/Letnn730/ebike-firmware-releases/releases/download/v0.6.2/firmware-rev02-0.6.2.bin",
+      "size": 639856,
+      "sha256": "02d1ce88c6c75723cca5ea695a5b566cba4a18542ab0b702ccd140783e8eca38",
+      "signedBlock": "4542465701030006020070c3090002d1ce88c6c75723cca5ea695a5b566cba4a18542ab0b702ccd140783e8eca38",
+      "signature": "db42ac014cdad1033502015c555f9bf062b68d62bbddbd2d23993f040cbd710985cf77a9336a58d91302b10602820c0282f5e807203fb866d4a22f4cc766002c",
+      "notes": "First OTA release"
+    }
+  ]
+}
